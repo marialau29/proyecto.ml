@@ -1,0 +1,397 @@
+
+* {
+	margin: 0px ;
+	padding: 0px ;
+	box-sizing: border-box ;
+	}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	background-color: #ebebeb;
+}
+img{
+	max-width: 100%;
+}
+
+h2{
+	font-size: 24px;
+}
+h3{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+main{
+	justify-content: center;
+	width: 90%;
+	margin: auto;
+}
+
+.truck{
+display: block;
+font-size: 16px;
+padding: 5px;
+width: 30px;
+height: 30px;
+border: 1px solid #39b54a;
+color: #39b54a;
+background-color: #FFF;
+border-radius: 50%;
+max-width: 35px;
+position:absolute;
+right: 20px;
+top:-15px;
+transition: transform 400ms;
+}
+
+.truck:hover{
+    transform: rotate(-90deg);
+}
+
+
+header{
+    background-color: #eac926;
+    padding: 10px;
+    margin-bottom: 0;
+    border-bottom: 0;
+    max-width: 100%;
+}
+
+
+.barraSuperior{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo{
+    max-width: 50%;
+}
+
+.searchBar{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    padding: 10px;
+}
+
+.searchBar input{
+    border-radius: 3px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    max-width: 95%;
+}
+
+.searchBar button{
+    border-radius: 3px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+.searchButton{
+    position: relative;
+    left: -5.5px;
+}
+
+
+.copyHeader{
+    font-size: 10px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav a{
+    display: none;
+}
+
+.burger-menu{
+	background-color: #03264C;
+	color: #ffffff;
+	display: block;
+	max-width: 50px;
+	padding: 15px 0;
+	border-radius: 8px;
+	text-align: center;
+	font-size: 18px;
+	margin: auto;
+}
+.barraInferior{
+	display:none;
+}
+
+.barraInferior a{
+	text-decoration: none;
+	color: #222222;
+	display: inline-block;
+	padding: 5px 0;
+	font-size: 17px;
+}
+
+
+/* main */
+.banner{
+	max-width: 100%;
+	display: block;
+	position: relative;
+	margin: auto;
+	text-align: center;
+}
+.productos {
+	padding: 15px;
+	margin: 10px;
+	
+	
+	}
+.productos img{
+	width: 100%;
+}
+.productos:hover{
+	box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.descripcion{
+    color: #666;
+    display: none;
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 150ms;
+}
+
+.descripcion:hover{
+    opacity: 100%;
+}
+
+.enLinea{
+	display: flex;
+	
+	}
+
+.caracteristicas{
+	border-top: 1px solid #ebebeb;
+	padding: 15px;
+	position: relative;
+}
+
+.descuento{
+	color: #39b54a;
+	flex-basis: 70%;
+}
+.precio{
+	flex-basis:30%;
+	font-size: 18px;
+}
+
+/* footer */
+footer{
+	text-align: center;
+	
+}
+#iconos{
+	font-size: 2em;
+	margin-bottom: 10px;
+	color: #1259c3;
+	}
+#iconos:hover{
+	color:#EAC926
+}
+
+.piePagina{
+	margin:10px;
+}
+
+.copyright{
+	text-align: left;
+	margin-top: 25px;
+}
+	/*media*/
+@media (min-width: 361px){
+	header{
+        width: 100%;
+    }
+	
+	.descripcion{
+		display: flex;
+
+	}
+	.productos{
+		box-shadow: 0;
+        max-width: 40%;
+        margin: 15px;
+        padding: 10px;
+        justify-content: center;
+        transition: box-shadow 200ms;
+		
+	}
+	.productos:hover{
+			box-shadow: 0px 0px 10px rgb(100, 100, 100);
+	}
+
+	.productos img {
+		width: 100%;
+	}
+
+	.visita{
+		   
+		justify-content: space-around;
+		flex-wrap: wrap;
+		display: flex;
+        		
+	}
+	.Ofertas{
+		justify-content: space-around;
+		flex-wrap: wrap;
+		display: flex;
+	}
+	
+	.productos{
+		flex-basis : 40%;
+		
+	}	
+	.burger-menu{
+		background-color: #03264C;
+		color: #ffffff;
+		display: block;
+		max-width: 50px;
+		padding: 15px 0;
+		border-radius: 8px;
+		text-align: center;
+		font-size: 18px;
+		margin: auto;
+	}
+	.searchBar{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    padding: 10px;
+}
+	
+
+@media (min-width: 769px){
+	
+	.barraInferior{
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.copy-header{
+		max-width: 350px;
+		text-align: right
+	}
+	
+	nav .searchBar{
+		display: flex;
+		flex-direction: row;
+	}
+	.burger-menu{
+		display:none;
+	}
+	.barraInferior{
+		display: flex;
+		justify-content: space-between;
+		color: #222222;
+	}
+	.barraInferior a{
+		margin: 0 5px;
+	}
+	.copyHeader{
+        font-size: 16px;
+		flex-direction: row;
+		display: flex;
+		text-align: right;
+    }
+
+    .barraSuperior{
+        flex-wrap: nowrap;
+
+    }
+	.productos:hover{
+		box-shadow: 0px 0px 10px rgb(100, 100, 100);
+	}
+
+	.searchBar{
+		display: flex;
+		flex-direction: row;
+		width: 50%;
+		padding: 10px;
+	}
+.logo{
+	width: 30%;
+}
+
+}
+
+@media (min-width: 1200px){
+	.logo{
+		width: 250px;
+	}
+
+	.copy-header{
+		max-width: none;
+		font-size: 22px;
+		font-weight: 400;
+		margin: 0;
+	}
+	
+	.barraSuperior{
+		align-items: center;
+		max-width: 1200px;
+		margin: auto;	
+
+		
+		
+	}
+	.barraInferior{
+		margin-top: 30px;
+		max-width: 1200px;
+		margin: auto;	
+	}
+	.barraInferior a{
+		margin: 10px;
+		font-size: 19px;
+	}
+	.searchBar{
+		border-radius: 8px;
+		display: flex;
+    	flex-direction: row;
+    	padding: 20px;
+    }
+	.visita{
+		display: flex;
+		flex-wrap: wrap;
+			
+	}
+		
+	.ofertas{ display: flex;
+		flex-wrap: wrap;
+		
+	}
+	.productos{
+		flex-basis : 20%;
+		
+	}
+	.productos:hover{
+		box-shadow: 0px 0px 10px rgb(100, 100, 100);
+	}
+		
+	.pieTextos{
+		display: flex;
+		justify-content: space-between;
+		font-weight: bold;
+
+	}
+
+	.piePagina{
+		justify-content:space-between;
+		text-align: center;
+		
+	}
+
+	
+}
+}
